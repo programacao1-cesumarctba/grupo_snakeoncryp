@@ -19,6 +19,7 @@ public class Main extends JFrame {
     static int Speed = 0;
 
     public static void main(String... arg) throws IOException, InterruptedException {
+        new Main();
         Snake S = new Snake(Width, Height);
         Map M = new Map(Width, Height);
         Food F = new Food(Width, Height);
@@ -52,7 +53,12 @@ public class Main extends JFrame {
             s.tailY[0] = s.Y;
         }
 
-        if(((dir =='s')&&(Predir == 'w'))||((dir =='w')&&(Predir == 's'))||((dir =='a')&&(Predir == 'd'))||((dir =='d')&&(Predir == 'a'))) {
+        if(
+                ((dir =='s')&&(Predir == 'w')) ||
+                ((dir =='w')&&(Predir == 's')) ||
+                ((dir =='a')&&(Predir == 'd')) ||
+                ((dir =='d')&&(Predir == 'a'))
+        ) {
             dir = Predir;
         }
         switch (dir) {
@@ -71,8 +77,12 @@ public class Main extends JFrame {
         }
         Predir = dir;
 
-        if ((s.X == 0) || (s.X == m.W + 1) || (s.Y == -1) || (s.Y == m.H)) {
-
+        if (
+                (s.X == 0) ||
+                (s.X == m.W + 1) ||
+                (s.Y == -1) ||
+                (s.Y == m.H)
+        ) {
             if (s.X == 0) {
                 s.X = m.W;
             } else if (s.X == m.W + 1) {
@@ -85,12 +95,18 @@ public class Main extends JFrame {
         }
 
         for (int i = 0; i < s.L; i++) {
-            if ((s.X == s.tailX[i]) && (s.Y == s.tailY[i])) {
+            if (
+                    (s.X == s.tailX[i]) &&
+                    (s.Y == s.tailY[i])
+            ) {
                 GameOver = true;
             }
         }
 
-        if ((s.X == f.X) && (s.Y == f.Y)) {
+        if (
+                (s.X == f.X) &&
+                (s.Y == f.Y)
+        ) {
             f.reset(W, H, s);
             s.eatFood();
             score += 10;
@@ -99,7 +115,7 @@ public class Main extends JFrame {
     }
 
     public static void CleanScreen() throws IOException, InterruptedException {
-        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();// 清除螢幕
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
     }
 
     public static void Draw(Snake s, Map m, Food f, boolean Gameover) {
@@ -109,9 +125,11 @@ public class Main extends JFrame {
         int Snake_y = s.Y;
         int Food_x = f.X;
         int Food_y = f.Y;
-        for (int i = 0; i < W + 2; i++)
+
+        for (int i = 0; i < W + 2; i++) {
             System.out.printf("#");
-        System.out.printf("\n");
+            System.out.printf("\n");
+        }
 
         if (!Gameover) {
             for (int i = 0; i < H; i++) {
@@ -172,8 +190,9 @@ public class Main extends JFrame {
 
         }
 
-        for (int i = 0; i < W + 2; i++)
+        for (int i = 0; i < W + 2; i++) {
             System.out.printf("#");
+        }
         System.out.printf("\n");
         System.out.println("Score : " + score);
         System.out.println("Speed : " + Speed + "%");
