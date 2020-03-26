@@ -128,8 +128,8 @@ public class Main extends JFrame {
 
         for (int i = 0; i < W + 2; i++) {
             System.out.printf("#");
-            System.out.printf("\n");
         }
+        System.out.printf("\n");
 
         if (!Gameover) {
             for (int i = 0; i < H; i++) {
