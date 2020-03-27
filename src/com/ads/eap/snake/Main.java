@@ -4,6 +4,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JFrame;
 import java.io.IOException;
+import java.lang.*;
+import java.util.Random;
+
 import com.ads.eap.snake.game.Snake;
 import com.ads.eap.snake.game.Map;
 import com.ads.eap.snake.game.Food;
@@ -54,10 +57,10 @@ public class Main extends JFrame {
         }
 
         if(
-                ((dir =='s')&&(Predir == 'w')) ||
-                ((dir =='w')&&(Predir == 's')) ||
-                ((dir =='a')&&(Predir == 'd')) ||
-                ((dir =='d')&&(Predir == 'a'))
+                ((dir =='s') && (Predir == 'w')) ||
+                ((dir =='w') && (Predir == 's')) ||
+                ((dir =='a') && (Predir == 'd')) ||
+                ((dir =='d') && (Predir == 'a'))
         ) {
             dir = Predir;
         }
@@ -118,6 +121,12 @@ public class Main extends JFrame {
         new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
     }
 
+    public static char randomWord() {
+        Random r = new Random();
+        char c = (char)(r.nextInt(26) + 'a');
+        return c;
+    }
+
     public static void Draw(Snake s, Map m, Food f, boolean Gameover) {
         int W = m.W;
         int H = m.H;
@@ -131,6 +140,9 @@ public class Main extends JFrame {
         }
         System.out.printf("\n");
 
+//        StringBuilder comida = new StringBuilder("TESTE");
+//        int strC = 0;
+
         if (!Gameover) {
             for (int i = 0; i < H; i++) {
                 for (int j = 0; j < W + 2; j++) {
@@ -139,7 +151,7 @@ public class Main extends JFrame {
                     } else if (j == W + 1) {
                         System.out.printf("#");
                     } else if ((i == Food_y) && (j == Food_x)) {
-                        System.out.printf("F");
+                        System.out.printf("%c", randomWord());
                     } else if ((i == Snake_y) && (j == Snake_x)) {
                         System.out.printf("Q");
                     } else if (s.L > 0) {

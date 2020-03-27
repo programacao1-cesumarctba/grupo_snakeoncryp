@@ -9,6 +9,8 @@
     <list default="true" id="cdbf2e9b-1948-4317-ac8f-0499d0ea83a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SnakeGame_jar/SnakeGame.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SnakeGame_jar/SnakeGame.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/com/ads/eap/snake/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeGame/com/ads/eap/snake/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeGame/com/ads/eap/snake/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeGame/com/ads/eap/snake/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ads/eap/snake/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ads/eap/snake/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +84,8 @@
       <workItem from="1583801502751" duration="2010000" />
       <workItem from="1585010628817" duration="79000" />
       <workItem from="1585011384983" duration="849000" />
+      <workItem from="1585264539636" duration="2798000" />
+      <workItem from="1585268293538" duration="484000" />
     </task>
     <servers />
   </component>
@@ -101,22 +105,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1583803293266" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1585012234065">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1585267359798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585012234065" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1585012234065">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585267359798" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1585267359798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585012234065" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1585012234065">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585267359798" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1585267359798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585012234065" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1585012234065">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585267359798" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1585267359798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585012234065" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585267359798" />
     <state x="406" y="89" key="SettingsEditor" timestamp="1583803490834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -125,6 +129,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1583803344193" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585264539645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585264539645" />
     <state x="342" y="140" key="new project wizard" timestamp="1585010708542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
